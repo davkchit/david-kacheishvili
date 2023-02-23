@@ -1,0 +1,39 @@
+.main__works {
+  margin-top: 120px;
+}
+
+.works__blocks {
+  max-width: 992px;
+  @include header;
+  margin: 0 auto;
+  justify-content: center;
+  @include large-tablet {
+    flex-flow: column;
+  }
+}
+
+.work__item {
+  width: 320px;
+  height: 320px;
+  background-image: url(../../imgs/img/Work.png);
+  @include background-image;
+}
+
+.works__blocks *:not(:first-child) {
+  margin-left: 15px;
+  @include large-tablet {
+    margin-left: 0px;
+  }
+}
+
+.works__blocks * {
+  margin-top: 15px;
+} 
+
+.works__title {
+  font-size: $f32;
+  margin-bottom: 30px;
+  text-align: center;
+  color: $orange;
+  font-weight: $bold;
+}

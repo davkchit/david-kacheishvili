@@ -1,0 +1,43 @@
+.main {
+  padding: 0 8%;
+  @include tablet {
+    padding: 0 6%;
+  }
+}
+
+.hero {
+  @include header;
+}
+
+.main__hero {
+  margin-top: 70px;
+  @media (max-width:1227px) {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.hero__h1 {
+  font-size: $f64;
+  color: $orange;
+  font-weight: $black;
+}
+
+.hero__h3 {
+  font-size: $f40;
+  color: $white;
+  font-weight: $bold;
+}
+
+.hero__p {
+  font-size: $f20;
+  color:$white;
+}
+
+.hero__img {
+  @include background-image;
+  width: 629px;
+  height: 575px;
+  background-image: url(../../imgs/img/David.svg);
+  
+}

@@ -1,0 +1,13 @@
+.main__aboutme {
+  margin: 140px auto 0 auto;
+}
+
+.aboutme {
+  @include aboutme;
+  max-width: 1064px;
+}
+
+.aboutme__text {
+  font-size: $f24;
+  color: $white;
+}

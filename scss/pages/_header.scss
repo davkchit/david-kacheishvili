@@ -1,0 +1,35 @@
+.header {
+  height: 80px;
+  @include header;
+  padding: 0 8%;
+  @include tablet {
+    padding: 0 10%;
+  }
+}
+
+.nav__item {
+  margin-left: 60px;
+  font-size: $f20;
+  font-weight: $bold;
+  color: $white;
+}
+
+.nav__item-orange {
+  color: $orange;
+}
+
+.header__nav {
+  @include large-tablet {
+    display: none;
+  }
+}
+
+.header__burger {
+  @include min-large-tablet {
+    display: none;
+  }
+
+  @include large-tablet {
+    display: block;
+  }
+}

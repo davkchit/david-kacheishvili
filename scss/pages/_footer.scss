@@ -1,0 +1,38 @@
+.main__footer {
+  margin: 140px auto 0 auto;
+  padding: 0 8%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @include tablet {
+    padding: 0 6%;
+  }
+  max-width: 900px;
+}
+
+.footer__p {
+  font-size: $f20;
+  color: $white;
+  margin-top: 20px;
+}
+
+.footer__h1 {
+  font-size: $f32;
+  color: $orange;
+}
+
+.footer__sections {
+  display: flex;
+}
+
+.footer__text {
+  color: $orange;
+  font-size: $f24;
+  margin-left: 15px;
+}
+
+.footer__block {
+  @include center;
+  margin-top: 15px;
+  margin-right: 15px;
+}
