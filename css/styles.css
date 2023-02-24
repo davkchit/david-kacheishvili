@@ -363,7 +363,7 @@ a {
 .work__item {
   width: 320px;
   height: 320px;
-  background-image: url(../../imgs/img/Work.svg);
+  background-image: url(https://raw.githubusercontent.com/davkchit/onedausite/f8e1e521f5959ec867a22538e1904b761adf9407/imgs/img/Work.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
