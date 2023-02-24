@@ -156,7 +156,7 @@ a {
   background-size: 100%;
   width: 629px;
   height: 575px;
-  background-image: url(../../imgs/img/David.svg);
+  background-image: url(../../imgs/img/David.png);
 }
 @media (max-width: 1227px) {
   .hero__img {
