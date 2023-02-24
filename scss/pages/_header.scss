@@ -21,13 +21,13 @@
   color: $orange;
 }
 
-.header__nav {
+.header__nav-tablet {
   @include large-tablet {
     display: none;
   }
 }
 
-.header__burger {
+.header__burger-tablet {
   @include min-large-tablet {
     display: none;
   }
