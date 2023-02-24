@@ -106,7 +106,7 @@ a {
 }
 @media (max-width: 1227px) {
   .hero__text {
-    text-align: center;
+    margin: 0 auto;
     margin-bottom: 64px;
   }
 }
@@ -370,6 +370,7 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
+  border-radius: 5px;
 }
 
 @media (max-width: 340px) {

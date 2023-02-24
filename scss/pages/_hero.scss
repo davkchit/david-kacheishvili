@@ -19,7 +19,7 @@
 .hero__text {
   max-width: 440px;
   @media (max-width:1227px) {
-    text-align: center;
+    margin: 0 auto;
     margin-bottom: 64px;
   }
   @media (max-width:650px) {
