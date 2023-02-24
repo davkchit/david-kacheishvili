@@ -191,11 +191,6 @@ a {
           justify-content: space-between;
   max-width: 1064px;
 }
-@media (max-width: 450px) {
-  .aboutme {
-    display: block;
-  }
-}
 
 @media (max-width: 450px) {
   .aboutme__img {
@@ -249,7 +244,7 @@ a {
   margin-top: 15px;
 }
 
-.skills__block {
+.block {
   width: 200px;
   height: 300px;
   background-color: #21201D;
@@ -269,11 +264,11 @@ a {
           flex-flow: column;
 }
 
-.skills__img {
+.block__img {
   margin-bottom: 10px;
 }
 
-.skills__text {
+.block__text {
   font-size: 32px;
   color: #F0E3CA;
 }
@@ -286,8 +281,11 @@ a {
   font-weight: bold;
 }
 
-.skills__block-hover {
-  background-color: #21201D;
+.rectangle {
+  height: 60px;
+  border-radius: 10px;
+  color: #F0E3CA;
+  font-size: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -297,35 +295,31 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 285px;
-  height: 60px;
-  border-radius: 10px;
-  color: #F0E3CA;
-  font-size: 24px;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  background-color: #21201D;
+  max-width: 285px;
+  margin: 0 auto;
+  margin-bottom: 15px;
 }
+
 @media (min-width: 450px) {
-  .skills__block-hover {
+  .skills__rectangle-mobile {
     display: none;
   }
 }
 @media (max-width: 450px) {
-  .skills__block-hover {
-    margin: 0 auto;
+  .skills__rectangle-mobile {
+    display: block;
   }
 }
 
-.obertka {
-  margin-bottom: 15px;
-}
-
-.hover__text {
+.rectangle__text {
   margin-left: 15px;
 }
 
-.hover__img {
+.rectangle__img {
   margin-left: 35px;
 }
 
@@ -333,7 +327,7 @@ a {
   margin-top: 120px;
 }
 
-.works__blocks {
+.works__cards {
   max-width: 992px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -352,7 +346,7 @@ a {
           justify-content: center;
 }
 @media (max-width: 1065px) {
-  .works__blocks {
+  .works__cards {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column;
@@ -360,7 +354,7 @@ a {
   }
 }
 
-.work__item {
+.card {
   width: 320px;
   height: 320px;
   background-image: url(https://raw.githubusercontent.com/davkchit/onedausite/f8e1e521f5959ec867a22538e1904b761adf9407/imgs/img/Work.svg);
@@ -368,23 +362,24 @@ a {
   background-position: center;
   background-size: 100%;
 }
+
 @media (max-width: 340px) {
-  .work__item {
+  .work__card {
     margin: auto;
     max-width: 100%;
   }
 }
 
-.works__blocks *:not(:first-child) {
+.work__card *:not(:first-child) {
   margin-left: 15px;
 }
 @media (max-width: 1065px) {
-  .works__blocks *:not(:first-child) {
+  .work__card *:not(:first-child) {
     margin-left: 0px;
   }
 }
 
-.works__blocks * {
+.work__card * {
   margin-top: 15px;
 }
 
@@ -399,6 +394,7 @@ a {
 .main__footer {
   margin: 140px auto 50px auto;
   padding: 0 8%;
+  max-width: 900px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -407,7 +403,6 @@ a {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  max-width: 900px;
 }
 @media (max-width: 704px) {
   .main__footer {

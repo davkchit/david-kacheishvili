@@ -20,7 +20,7 @@
   margin-top: 15px;
 } 
 
-.skills__block {
+.block {
   width: 200px;
   height: 300px;
   background-color: $dark-grey;
@@ -29,11 +29,11 @@
   flex-flow: column;
 }
 
-.skills__img {
+.block__img {
   margin-bottom: 10px;
 }
 
-.skills__text {
+.block__text {
   font-size: $f32;
   color: $white;
 }
@@ -47,30 +47,36 @@
 }
 
 .skills__block-hover {
-  background-color:$dark-grey;
-  @include center;
-  max-width: 285px;
+
+
+}
+
+.rectangle {
   height: 60px;
   border-radius: 10px;
   color: $white;
   font-size: $f24;
+  @include center;
   justify-content: flex-start;
+  background-color:$dark-grey;
+  max-width: 285px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.skills__rectangle-mobile {
   @include min-mobile {
     display: none;
   }
   @include mobile {
-    margin: 0 auto;
+    display: block;
   }
 }
 
-.obertka {
-  margin-bottom: 15px;
-}
-
-.hover__text {
+.rectangle__text {
   margin-left: 15px;
 }
 
-.hover__img {
+.rectangle__img {
   margin-left: 35px;
 }

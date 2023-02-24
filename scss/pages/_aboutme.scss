@@ -8,9 +8,6 @@
 .aboutme {
   @include aboutme;
   max-width: 1064px;
-  @include mobile {
-    display: block;
-  }
 }
 
 .aboutme__img {

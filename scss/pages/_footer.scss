@@ -1,14 +1,14 @@
 .main__footer {
   margin: 140px auto 50px auto;
   padding: 0 8%;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
   @include tablet {
     padding: 0 6%;
     display: block;
   }
   max-width: 900px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .footer__p {
