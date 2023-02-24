@@ -156,7 +156,7 @@ a {
   background-size: 100%;
   width: 629px;
   height: 575px;
-  background-image: url(../../imgs/img/David.png);
+  background-image: url(https://raw.githubusercontent.com/davkchit/onedausite/560f8e157110d4eb8ee7e31931aa8db619b3714b/imgs/img/David.svg);
 }
 @media (max-width: 1227px) {
   .hero__img {
@@ -363,7 +363,7 @@ a {
 .work__item {
   width: 320px;
   height: 320px;
-  background-image: url(../../imgs/img/Work.png);
+  background-image: url(../../imgs/img/Work.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;

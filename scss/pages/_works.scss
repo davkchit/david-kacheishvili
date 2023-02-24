@@ -15,7 +15,7 @@
 .work__item {
   width: 320px;
   height: 320px;
-  background-image: url(../../imgs/img/Work.png);
+  background-image: url(../../imgs/img/Work.svg);
   @include background-image;
   @media (max-width:340px) {
     margin: auto;
