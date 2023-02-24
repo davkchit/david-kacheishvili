@@ -7,6 +7,9 @@
   @include header;
   margin: 0 auto;
   justify-content: center;
+  @include mobile {
+    display: none;
+  }
 }
 
 .skills__blocks *:not(:first-child) {
@@ -41,4 +44,33 @@
   text-align: center;
   color: $orange;
   font-weight: $bold;
+}
+
+.skills__block-hover {
+  background-color:$dark-grey;
+  @include center;
+  max-width: 285px;
+  height: 60px;
+  border-radius: 10px;
+  color: $white;
+  font-size: $f24;
+  justify-content: flex-start;
+  @include min-mobile {
+    display: none;
+  }
+  @include mobile {
+    margin: 0 auto;
+  }
+}
+
+.obertka {
+  margin-bottom: 15px;
+}
+
+.hover__text {
+  margin-left: 15px;
+}
+
+.hover__img {
+  margin-left: 35px;
 }

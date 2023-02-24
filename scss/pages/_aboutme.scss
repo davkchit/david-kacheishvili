@@ -1,13 +1,28 @@
 .main__aboutme {
   margin: 140px auto 0 auto;
+  @include mobile {
+    display: block;
+  }
 }
 
 .aboutme {
   @include aboutme;
   max-width: 1064px;
+  @include mobile {
+    display: block;
+  }
+}
+
+.aboutme__img {
+  @include mobile {
+    text-align: center;
+  }
 }
 
 .aboutme__text {
   font-size: $f24;
   color: $white;
+  @include mobile {
+    margin: 0 auto;
+  }
 }

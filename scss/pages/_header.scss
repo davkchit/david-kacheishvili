@@ -5,6 +5,9 @@
   @include tablet {
     padding: 0 10%;
   }
+  @include mobile {
+    padding: 0 6%;
+  }
 }
 
 .nav__item {

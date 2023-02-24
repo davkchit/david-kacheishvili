@@ -6,6 +6,7 @@
   flex-wrap: wrap;
   @include tablet {
     padding: 0 6%;
+    display: block;
   }
   max-width: 900px;
 }
@@ -16,6 +17,12 @@
   margin-top: 20px;
 }
 
+.footer__info {
+  @media (max-width:$tablet) {
+    text-align: center;
+  }
+}
+
 .footer__h1 {
   font-size: $f32;
   color: $orange;
@@ -23,6 +30,9 @@
 
 .footer__sections {
   display: flex;
+  @media (max-width:$tablet) {
+    display: block;
+}
 }
 
 .footer__text {
@@ -35,4 +45,11 @@
   @include center;
   margin-top: 15px;
   margin-right: 15px;
+}
+
+.footer__contacts {
+  @media (max-width:$tablet) {
+    text-align: center;
+    margin-top: 75px;
+  }
 }
