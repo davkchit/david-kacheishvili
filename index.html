@@ -11,6 +11,25 @@
 </head>
 
 <body>
+  <script>
+    for (i = 1; i > 0 ; i++) {
+      let userName = prompt("Введите ваше имя:");
+      if (userName === "Давид") {
+        alert("Проходите, о величайший Давид!");
+        break;
+      } else if (userName === "Админ") {
+        alert("Заходите, о великий Админ!");
+        break; 
+      } else if (userName == "Фарид" || userName == "Агаев") {
+        alert(`А вот вам, ${userName} вход категорически запрещен.`)
+      } else if (userName === "" || userName === null) {
+        alert("Эй! Введите хоть что-нибудь!")
+      } else {
+        alert(`Я вас очень рад вас видеть, ${userName}`);
+        break;
+      }
+    }
+  </script>
   <header class="header">
     <div class="logo header__logo">
       <img src="imgs/img/Kacheishvili.svg" alt="Kacheishvili">
