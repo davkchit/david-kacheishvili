@@ -427,9 +427,12 @@ a {
   margin-top: 20px;
 }
 
+.footer__info {
+  max-width: 210px;
+}
 @media (max-width: 704px) {
   .footer__info {
-    text-align: center;
+    margin: 0 auto;
   }
 }
 
@@ -474,4 +477,22 @@ a {
     text-align: center;
     margin-top: 75px;
   }
+}
+
+.language {
+  width: 50px;
+  height: 50px;
+  -webkit-transition: all 0.55s ease;
+  transition: all 0.55s ease;
+  margin: 0 auto;
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+
+.usa {
+  background-image: url("../../imgs/icons/usa.svg");
+}
+
+.rus {
+  background-image: url("../../imgs/icons/rus.svg");
 }
